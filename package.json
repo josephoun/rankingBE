@@ -1,0 +1,23 @@
+{
+  "name": "ranking",
+  "version": "1.0.0",
+  "description": "Wikipedia Ranking App with NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "ranking",
+    "nodejs",
+    "node",
+    "express",
+    "angular"
+  ],
+  "author": "Joseph Oun",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.1",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21"
+  }
+}
