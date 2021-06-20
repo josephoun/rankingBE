@@ -4,7 +4,9 @@
   "description": "Wikipedia Ranking App with NodeJS",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "start": "nodemon index.js",
+    "test": "test",
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "ranking",
@@ -16,8 +18,13 @@
   "author": "Joseph Oun",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.0.1",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

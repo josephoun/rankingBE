@@ -1,10 +1,25 @@
 const express = require('express');
 const app = express();
+const logger = require('./middlewares/logger');
+const api = require('./router/api');
+const { PORT } = require('./constants');
 
-app.get('/', (req, res) => {
-    res.send({ message: 'Hello WWW!' });
+
+// Middleware Parsers
+app.use(express.json());
+app.use(express.urlencoded({extended: true}));
+
+// Logger Middleware
+app.use(logger);
+
+// Set our api routes
+app.use('/api', api);
+
+// Catch all other routes and return the index file
+app.get('*', (req, res) => {
+    res.status(404).send({message: 'Not Found'});
 });
 
-app.listen(3002, () => {
-    console.log('Application listening on port 3333!');
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`);
 });
