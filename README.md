@@ -18,3 +18,6 @@
 
 * npm i
 * ng start
+
+![alt text](https://i.postimg.cc/VkFDn0LF/frontback.png)
+![alt text](https://i.postimg.cc/q7RXKmFk/back.png)
